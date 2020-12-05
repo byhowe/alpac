@@ -1,0 +1,19 @@
+[package]
+name = "alpac"
+version = "0.1.0"
+authors = ["B. Howe <37745048+byhowe@users.noreply.github.com>"]
+description = "A package manager that utilizes Lua to build packages"
+edition = "2018"
+
+[[bin]]
+name = "alpac"
+path = "alpac/main.rs"
+
+[dependencies]
+clap = "2.33"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.8"
+curl = "0.4"
+hex = "0.4"
+openssl = "0.10"
+url = { version = "2.2", features = ["serde"] }
